@@ -26,6 +26,23 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<style>
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30%;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+</style>
 </head>
 <body>
 
@@ -37,9 +54,14 @@
 						Conceivably Well
 					</span>
 
-					<span class="login100-form-avatar">
-						<img src="images/avatar.jpg" alt="AVATAR">
+					
+					<!--     -->
+
+					<span class="image-cropper">
+    					<img src="images\url-1.jpg" class="rounded" />
 					</span>
+
+					<!--    -->
 
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">

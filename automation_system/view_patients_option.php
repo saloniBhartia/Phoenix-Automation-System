@@ -31,17 +31,43 @@
     Select an option
   </span>
 
-<form method="post" action="view_history.php">
-  <button class="addnew-form-btn" >
-   View History
-  </button>
-</form>
+	<form method="post" action="view_history.php">
+	  <button class="addnew-form-btn" >
+	   View History
+	  </button>
+	</form>
 
 	<form method="post" action="modify_details.php">
 		<button class="addnew-form-btn">
 			Update/Edit the details
 		</button>
 	</form>
+
+	
+	<form method="post" action="gdm.php">
+		<button class="addnew-form-btn">
+			Diagnosing Gestational Diabetes Mellitus
+		</button>
+	</form>
+
+	<form method="post" action="modify_details.php">
+		<button class="addnew-form-btn">
+			Prediction of Maternal Death
+		</button>
+	</form>
+
+	<form method="post" action="modify_details.php">
+		<button class="addnew-form-btn">
+			Prediction of Outcome Of Delivery			
+		</button>
+	</form>
+
+	<form method="post" action="modify_details.php">
+		<button class="addnew-form-btn">
+			Prediction of Mode Of Delivery			
+		</button>
+	</form>
+
 
 
 </body>
