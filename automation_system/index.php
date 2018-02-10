@@ -58,18 +58,6 @@
 						</button>
 					</div>
 
-					<ul class="login-more p-t-190">
-
-						<li>
-							<span class="txt1">
-								Don’t have an account?
-							</span>
-
-							<a href="#" class="txt2">
-								Sign up
-							</a>
-						</li>
-					</ul>
 				</form>
 			</div>
 		</div>
