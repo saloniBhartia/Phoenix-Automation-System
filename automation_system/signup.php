@@ -31,14 +31,18 @@
     Select an option
   </span>
 
-
-  <button class="addnew-form-btn" formaction="new_patient.php">
-    Add new
+<form method="post" action="new_patient_anc.php">
+  <button class="addnew-form-btn" >
+    Add new Patient
   </button>
+</form>
 
-  <button class="addnew-form-btn" formaction="anc_num.php">
-    View Previous
-  </button>
+	<form method="post" action="anc_num.php">
+		<button class="addnew-form-btn">
+			View Previous Patient
+		</button>
+	</form>
+
 
 </body>
 </html>
