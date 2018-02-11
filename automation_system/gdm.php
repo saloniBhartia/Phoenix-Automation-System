@@ -24,11 +24,11 @@
 						<tbody>
 							<tr>
 								<th>Number of times pregnant</th>
-								<td><input type="text" name="PregNum" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" required></td>
+								<td><input type="text" name="PregNum" required></td>
 							</tr>
               <tr>
 								<th> Plasma glucose concentration a 2 hours in an oral glucose tolerance test </th>
-								<td><input type="text" name="Glucose-Conc" id="cell" maxlength="2" value="" required></td>
+								<td><input type="text" name="Glucose-Conc" id="cell" maxlength="5" value="" required></td>
 							</tr>
 
               <tr>
