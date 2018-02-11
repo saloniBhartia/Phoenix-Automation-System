@@ -28,8 +28,13 @@ model.add(Dense(1, init='uniform', activation='sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # fit the model
-model.fit(X_train, Y_train, validation_data=(X_test, Y_test), nb_epoch=200, batch_size=5, verbose=0)
+model.fit(X_train, Y_train, validation_data=(X_test, Y_test), nb_epoch=250, batch_size=3, verbose=0)
 
 # evaluate the model
 scores = model.evaluate(X_test, Y_test)
 print("Accuracy: %.2f%%" % (scores[1]*100))
+
+y_pred = model.predict(X_test)
+y_pred = (y_pred>0.5)
+from sklearn.metrics import confusion_matrix
+confusionMatrix = confusion_matrix(Y_test,y_pred)
