@@ -31,6 +31,41 @@
     Select an option
   </span>
 
+	<?php
+	//Configure database_access
+	$con = mysqli_connect("localhost", "root", "");
+	if (!$con) {
+	  die('Could not connect: ' . mysqli_error());
+	}
+	$db = mysqli_select_db($con, "conceivably_well");
+	if(!$db)
+	  echo " Connection to the database failed ";
+	$conn = mysqli_connect("localhost","root","");
+	if (!$conn) {
+	  die('Could not connect: ' . mysqli_error());
+	  echo "NO Connection";
+	}
+	$db = mysqli_select_db($conn, "conceivably_well");
+	if(!$db)
+	  echo " Connection to the database failed ";
+	//Database configuration done
+
+		$uname = $_POST['username'];
+		$pwd=$_POST['pass'];
+		$sql_query_to_check_the_auth = "SELECT * FROM `login_table` WHERE `user_name`='".$uname."'AND `password`='".$pwd."';";
+		#echo " ".$sql_query_to_check_the_auth;
+		$v = mysqli_query($con,$sql_query_to_check_the_auth);
+		if(!$v)
+			{
+				echo '<script language="javascript">';
+				echo 'alert("Incorrect Username or password")';
+				echo '</script>';
+				include 'index.php';
+			}
+			else {
+
+	?>
+
 <form method="post" action="new_patient_anc.php">
   <button class="addnew-form-btn" >
     Add new Patient
@@ -43,6 +78,6 @@
 		</button>
 	</form>
 
-
+<?php }?>
 </body>
 </html>

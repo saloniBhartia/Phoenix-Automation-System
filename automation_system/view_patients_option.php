@@ -43,28 +43,28 @@
 		</button>
 	</form>
 
-	
+
 	<form method="post" action="gdm.php">
 		<button class="addnew-form-btn">
 			Diagnosing Gestational Diabetes Mellitus
 		</button>
 	</form>
 
-	<form method="post" action="modify_details.php">
+	<form method="post" action="mat_deaths_predict.php">
 		<button class="addnew-form-btn">
-			Prediction of Maternal Death
+			Maternal Health Risk
 		</button>
 	</form>
 
-	<form method="post" action="modify_details.php">
+	<form method="post" action="predict_outcome.php">
 		<button class="addnew-form-btn">
-			Prediction of Outcome Of Delivery			
+			Prediction of Outcome Of Delivery
 		</button>
 	</form>
 
-	<form method="post" action="modify_details.php">
+	<form method="post" action="predict_mode.php">
 		<button class="addnew-form-btn">
-			Prediction of Mode Of Delivery			
+			Prediction of Mode Of Delivery
 		</button>
 	</form>
 
