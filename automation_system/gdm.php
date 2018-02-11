@@ -19,7 +19,7 @@
 			<div class="container">
 				<h2>Diagnosing Gestational Diabetes Mellitus</h2><br><br>
 				<center><h4><strong>Enter Details of Patient:</strong></h4><br><br>
-				<form action="save_details.php" method="post" class="form-horizontal" name="add_patient" role="form">
+				<form action="diagnose_details.php" method="post" class="form-horizontal" name="add_patient" role="form">
 					<table class="table table-bordered">
 						<tbody>
 							<tr>
@@ -28,29 +28,29 @@
 							</tr>
               <tr>
 								<th> Plasma glucose concentration a 2 hours in an oral glucose tolerance test </th>
-								<td><input type="text" name="Glucose-Conc" id="cell" maxlength="5" value="" required></td>
+								<td><input type="text" name="Glucose-Conc" required></td>
 							</tr>
 
               <tr>
 								<th>Diastolic blood pressure (mm Hg)</th>
-								<td><input type="text" name="DBP" id="cell" maxlength="4"  value="" required></td>
+								<td><input type="text" name="DBP" required></td>
 							</tr>
               <tr>
 								<th>Triceps skin fold thickness (mm)</th>
-								<td><input type="text" name="skin-thick" id="cell" maxlength="3" value="" required></td>
+								<td><input type="text" name="skin-thick" required></td>
 							</tr>
 			   <tr>
 								<th>2-Hour serum insulin (mu U/ml) </th>
-								<td><input type="text" name="serum-insulin" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" required></td>
+								<td><input type="text" name="serum-insulin" ></td>
 							</tr>
 				   <tr>
 								<th>Body mass index (weight in kg/(height in m)^2) </th>
-								<td><input type="text" name="BMI" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" required></td>
+								<td><input type="text" name="BMI" ></td>
 							</tr>
 
 					   <tr>
 								<th>Diabetes pedigree function</th>
-								<td><input type="text" name="PedFn" pattern="[a-zA-Z ]+" title="Only Alphabets are allowed" required></td>
+								<td><input type="text" name="PedFn" ></td>
 							</tr>
 
 						</tbody>
