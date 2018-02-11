@@ -64,20 +64,26 @@
 			}
 			else {
 
+				if($uname=='Reception')
+				{
 	?>
-
 <form method="post" action="new_patient_anc.php">
   <button class="addnew-form-btn" >
     Add new Patient
   </button>
 </form>
+<?php
+}
 
+else {
+	?>
 	<form method="post" action="anc_num.php">
 		<button class="addnew-form-btn">
 			View Previous Patient
 		</button>
 	</form>
-
-<?php }?>
+<?php
+}
+	}?>
 </body>
 </html>

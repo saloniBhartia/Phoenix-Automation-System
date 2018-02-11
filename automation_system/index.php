@@ -46,7 +46,7 @@ img {
 </head>
 <body>
 
-	<div class="limiter">
+	<div class="limiter">&nbsp &nbsp
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
 				<form class="login100-form validate-form" action="signup.php" method="post">
@@ -54,7 +54,7 @@ img {
 						Conceivably Well
 					</span>
 
-					
+
 					<!--     -->
 
 					<span class="image-cropper">

@@ -24,14 +24,53 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   <!--===============================================================================================-->
-  </head>
-<body>
 
+	<?php
+	//Configure database_access
+	$con = mysqli_connect("localhost", "root", "");
+	if (!$con) {
+		die('Could not connect: ' . mysqli_error());
+	}
+	$db = mysqli_select_db($con, "conceivably_well");
+	if(!$db)
+		echo " Connection to the database failed ";
+	$conn = mysqli_connect("localhost","root","");
+	if (!$conn) {
+		die('Could not connect: ' . mysqli_error());
+		echo "NO Connection";
+	}
+	$db = mysqli_select_db($conn, "conceivably_well");
+	if(!$db)
+		echo " Connection to the database failed ";
+	//Database configuration done
+	?>
+
+	</head>
+<body>
+<?php
+	$anc_number = $_POST['anc_num'];
+
+	$sql_query = "SELECT * FROM `new_patient` WHERE `ANC_NUM`=".$anc_number.";";
+
+	#echo " ".$sql_query;
+	$v = mysqli_query($con,$sql_query);
+	#echo ''.$v;
+	$r = mysqli_fetch_assoc($v);
+	if(!$r)
+	{
+		echo'<script language="javascript">';
+		echo 'alert("ANC number does not exist enter a valid number")';
+		echo '</script>';
+		include 'anc_num.php';
+	}
+
+	else {
+ ?>
   <span class="login100-form-title p-b-70">
     Select an option
   </span>
 
-	<form method="post" action="view_history.php">
+	<form method="get" action="view_history?anc_num='".$anc_number."'.php">
 	  <button class="addnew-form-btn" >
 	   View History
 	  </button>
@@ -42,8 +81,6 @@
 			Update/Edit the details
 		</button>
 	</form>
-
-
 	<form method="post" action="gdm.php">
 		<button class="addnew-form-btn">
 			Diagnosing Gestational Diabetes Mellitus
@@ -69,6 +106,6 @@
 	</form>
 
 
-
+<?php } ?>
 </body>
 </html>
